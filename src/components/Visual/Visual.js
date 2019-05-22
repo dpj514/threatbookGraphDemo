@@ -1,7 +1,7 @@
 import React from "react";
-import * as d3 from "d3";
 
 import VisualPanel from "./VisualPanel";
+import VisualGraph from './VisualGraph'
 import './visual.scss';
 
 export default class Visual extends React.Component {
@@ -13,14 +13,14 @@ export default class Visual extends React.Component {
   }
 
   componentDidMount() {
-    /** @type {HTMLCanvasElement}  */
     this.container = document.getElementById(this.props.id);
   }
 
   render() {
     return (
-        <div id={this.props.id} className="visual">
+        <div className="visual">
           <VisualPanel/>
+          <VisualGraph id={this.props.id} />
         </div>
     );
   }
