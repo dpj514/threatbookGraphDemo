@@ -1,37 +1,45 @@
 .visual {
   width: 100vw;
   height: 100vh;
+  padding: 20px;
   background: #f7f8f8 url("../../asset/img/visual_bg.svg") repeat;
 
   .visual-panel {
-    width: 300px;
+    position: absolute;
+    width: 380px;
     height: calc(100% - 40px);
-    padding: 20px;
     border: solid rgba(145, 145, 145, 0.61) 1px;
     border-radius: 3px;
     background-color: #fff;
     box-shadow: 0 0 6px 0 rgba(45, 66, 86, .40);
 
     &__header {
-
+      margin: 20px
     }
 
     &__title {
-
+      font-size: 16px;
+      font-weight: bold;
     }
 
     &__body {
-
+      margin: 20px
     }
 
     &__content {
-      padding: 16px;
+      font-size: 12px;
     }
   }
 
   .visual-list {
+    padding: 0;
     &__item {
       display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
     }
+  }
+  .visual-graph {
+    display: block;
   }
 }
