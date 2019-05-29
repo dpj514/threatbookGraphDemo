@@ -2,8 +2,6 @@
   width: 100vw;
   height: 100vh;
   padding: 20px;
-  background: #f7f8f8 url("../../asset/img/visual_bg.svg") repeat;
-
   .visual-panel {
     position: absolute;
     width: 380px;
@@ -41,5 +39,6 @@
   }
   .visual-graph {
     display: block;
+    background: #f7f8f8 url("../../asset/img/visual_bg.svg") repeat;
   }
 }
