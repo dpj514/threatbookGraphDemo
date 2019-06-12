@@ -12,10 +12,21 @@
     box-shadow: 0 0 6px 0 rgba(45, 66, 86, .40);
 
     &__header {
-      margin: 20px
+      display: flex;
+      align-items: center;
+      margin: 20px;
+    }
+    .visual-panel__icon--large {
+      width: 3em;
+      height: 3em;
+    }
+    .visual-panel__icon--small {
+      width: 1em;
+      height: 1em;
     }
 
     &__title {
+      margin-left: 10px;
       font-size: 16px;
       font-weight: bold;
     }
@@ -34,11 +45,18 @@
     &__item {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 30px;
+      padding: 15px 10px;
+      cursor: pointer;
+    }
+    &__item:hover {
+      background-color: #f8f9fa;
     }
   }
   .visual-graph {
     display: block;
     background: #f7f8f8 url("../../asset/img/visual_bg.svg") repeat;
+    .visual-graph__node {
+      cursor: pointer;
+    }
   }
 }

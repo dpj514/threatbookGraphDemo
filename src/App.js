@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Visual id="demo"/>
+      <Visual id="demo" domain='aa.com'/>
     </div>
   );
 }
